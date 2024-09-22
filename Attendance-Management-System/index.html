@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="index.css">
+<title>Home Page</title>
+<link rel="stylesheet" href="index.js">
+</head>
+
+<body>
+  <script>
+    window.onload = function () {
+	var preTitle = document.title;
+	var postTitle = "Mark Attendance ! 🥺";
+	document.addEventListener("visibilitychange", function () {
+	  var page_Active = !document.hidden;
+  
+	  if (!page_Active) {
+		document.title = postTitle;
+	  } else {
+		document.title = preTitle;
+	  }
+	});
+  };
+  </script>
+  <div class="lg" style="display: flex; justify-content: space-evenly; align-items: center; text-align: center;">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <a href="#">Contact</a>
+  <a href="#">About</a>
+</div>
+
+<div id="main" style="color: aliceblue;">
+  
+  <span style="font-size:30px;cursor:pointer ;align-items: center;display: flex; justify-content: space-evenly;" onclick="openNav()">&#9776;  
+    <img src="https://is3-ssl.mzstatic.com/image/thumb/Purple71/v4/55/22/2d/55222de9-12ee-3a3c-2b29-9c0e74e3c953/source/512x512bb.jpg" alt="This is an image!!" width="50px" height="50px" style=" margin-left:20px ; margin-right: 20px;">
+    Attendance</span>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<label for="switch" style="float: right; padding-left: 50px;">
+  <input type="checkbox" id="switch" class="switch">
+  <label for="switch"></label>
+</label>
+<script>
+const $html = document.querySelector("html");
+const $checkbox = document.querySelector("#switch");
+
+$checkbox.addEventListener("change", function() {
+  $html.classList.toggle("light-mode");
+});
+</script>
+</div>
+  
+    <div class="row">
+      
+        <div class="column1" >
+          <h2 style="color: whitesmoke;">Present Sir</h2>
+<br>
+          <p style="color: gainsboro;">An efficient Solutions for both Students and Teachers. </p>
+<br>
+          <div class="button-cls">
+            <form name="sign up.">
+      
+              <table>
+              <tr>
+                   <td colspan=2 text-align="center"></td>
+                   
+              </tr>
+              <tr>
+               <td colspan=2 text-align="center" style="color: aliceblue;"><h2>Login</h2></td>
+               </tr>
+               <tr>
+               <td><label for="uname" style="padding: 10px; margin-right: 20px; font-size: 20px; color: aliceblue;">userName</label></td>
+
+               <td style="padding: 20px;"><input type="text" id="uname" name="uname" pattern="[A-Za-z]{5}" title="seven letter allwed" required></td>
+            
+               </tr>
+               
+               <tr>
+               <td><label for="pwd" style="padding: 10px; margin-right: 20px; font-size: 20px; color: aliceblue; ">Password</label></td>
+               <td><input type="password" id="pwd" name="uname" pattern="{4}" title="three or more character"></td>
+               </tr>
+               
+               <tr><pre>
+           
+               <td>
+                <br>
+                <br>
+                <button style="background: gainsboro;">
+                <input type="submit" name="login-btn" id="login-btn" value="login" style="border-radius: 30%; background-color: black; color: whitesmoke;">
+               </button></td>
+               
+               
+               <td><button style="background: aliceblue; margin-top: 35px;"><a href="regitration.html" style="color: blue;">Sign up</a></button></td>
+               
+               </tr></pre>
+              </table>
+              </form>
+       <br>
+            <button class="btn-primary1">Login as Students</button>
+                <br />
+                <button class="btn-primary2">Login as Teachers</button>
+          </div>
+
+        </div>
+        <div class="column2" >
+          <h2></h2>
+          <img src="student.png" alt="Students">
+        </div>
+    </div>
+    
+  <div class="footer">
+    <div class="Owner">
+      This project is made by Deeptesh Rout .
+    </div>
+    <div class="sm">
+      Contact Me:
+          <a target="_blank" class="github" href="https://github.com/deeptesh-rout"><i class="fa fa-github fa-2x"></i></a>
+          
+          <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/deeptesh-rout-2b418b2b4/"><i class="fa fa-linkedin fa-2x"></i></a>
+    </div>
+  
+  </div>
+</body>
+</html>
